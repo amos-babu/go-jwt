@@ -29,7 +29,7 @@ func main() {
 	}
 }
 
-// Creating and signing new JWT tokens
+// Creating and signing new JWT
 func createToken(username string) (string, error) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256,
 		jwt.MapClaims{
